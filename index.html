@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eggplant Delights - ナス料理ギャラリー</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Noto+Sans+JP:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Loading Screen -->
+<div class="loading" id="loading">
+  <div class="spinner"></div>
+</div>
+
+<!-- Theme Toggle -->
+<div class="theme-toggle" id="themeToggle">🌙 ダークモード</div>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>🍆 Eggplant Delights</h1>
+    <p>ナス料理の魅力を再発見</p>
+  </div>
+  <div class="scroll-indicator"></div>
+</section>
+
+<!-- Stats -->
+<section class="stats">
+  <div class="stat-item">
+    <span class="stat-number" data-target="10">0</span>
+    <span class="stat-label">絶品レシピ</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-number" data-target="100">0</span>
+    <span class="stat-label">満足度 %</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-number" data-target="5">0</span>
+    <span class="stat-label">調理時間(分平均)</span>
+  </div>
+</section>
+
+<!-- Filter Section -->
+<section class="filter-section">
+  <h2>料理カテゴリー</h2>
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-filter="all">すべて</button>
+    <button class="filter-btn" data-filter="grilled">グリル</button>
+    <button class="filter-btn" data-filter="baked">オーブン焼き</button>
+    <button class="filter-btn" data-filter="fried">揚げ物</button>
+    <button class="filter-btn" data-filter="stewed">煮込み</button>
+  </div>
+</section>
+
+<!-- Navigation -->
+<nav>
+  <a href="#dish1">ガーリックバター</a>
+  <a href="#dish2">ラザニア</a>
+  <a href="#dish3">照り焼きステーキ</a>
+  <a href="#dish4">カプレーゼ</a>
+  <a href="#dish5">キーマカレー</a>
+  <a href="#dish6">カポナータ</a>
+  <a href="#dish7">ハニーチーズ</a>
+  <a href="#dish8">麻婆</a>
+  <a href="#dish9">ミートボールサブ</a>
+  <a href="#dish10">クリスピーフライ</a>
+</nav>
+
+<!-- Dish Gallery -->
+<section class="gallery">
+  <div class="dishes-container">
+    
+    <!-- Dish 1 -->
+    <div class="dish-card" id="dish1" data-category="grilled" 
+         data-recipe="ナスを縦半分に切り込みを入れ、ガーリックバターを塗ってオーブン200℃で15分焼く。焼き上がったら、パセリとパルメザンチーズをトッピング。"
+         data-name="とろけるガーリックバターグリル">
+      <div class="dish-image-container">
+        <img src="./001-Generated Image November 14, 2025 - 9_40PM.png" alt="ガーリックバターナス">
+        <div class="dish-overlay">
+          <button class="view-recipe-btn">レシピを見る</button>
+        </div>
+      </div>
+      <div class="dish-content">
+        <h3>とろけるガーリックバターグリル</h3>
+        <p>ジューシーなナスにガーリックバターの香りがたまらない一品。表面はカリッと、中はとろける食感が楽しめます。</p>
+        <div class="dish-tags">
+          <span class="tag">グリル</span>
+          <span class="tag">洋風</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dish 2 -->
+    <div class="dish-card" id="dish2" data-category="baked"
+         data-recipe="薄切りナスを軽く焼き、ミートソースとリコッタチーズで層を作る。モッツァレラを乗せて180℃で20分焼き、バジルを飾る。"
+         data-name="ナスのラザニア">
+      <div class="dish-image-container">
+        <img src="./002-Generated Image November 14, 2025 - 9_41PM.png" alt="ナスラザニア">
+        <div class="dish-overlay">
+          <button class="view-recipe-btn">レシピを見る</button>
+        </div>
+      </div>
+      <div class="dish-content">
+        <h3>ナスのラザニア</h3>
+        <p>パスタの代わりにナスを使った、グルテンフリーのラザニア。とろけるチーズとミートソースが絶品です。</p>
+        <div class="dish-tags">
+          <span class="tag">オーブン焼き</span>
+          <span class="tag">イタリアン</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dish 3 -->
+    <div class="dish-card" id="dish3" data-category="grilled"
+         data-recipe="分厚く切ったナスに格子状の切り込みを入れ、フライパンで両面焼く。醤油、みりん、砂糖を混ぜた照り焼きソースで絡める。"
+         data-name="ナスの照り焼きステーキ">
+      <div class="dish-image-container">
+        <img src="./003-Generated Image November 14, 2025 - 9_43PM.png" alt="ナス照り焼き">
+        <div class="dish-overlay">
+          <button class="view-recipe-btn">レシピを見る</button>
+        </div>
+      </div>
+      <div class="dish-content">
+        <h3>ナスの照り焼きステーキ</h3>
+        <p>肉のような食感に照り焼きソースが絡む、老若男女に人気の味わい。ご飯のお供に最適です。</p>
+        <div class="dish-tags">
+          <span class="tag">グリル</span>
+          <span class="tag">和風</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dish 4 -->
+    <div class="dish-card" id="dish4" data-category="fried"
+         data-recipe="ナスを輪切りにして揚げ焼きし、トマト、モッツァレラ、バジルと交互に重ねる。オリーブオイルとバルサミコ酢でドレッシング。"
+         data-name="ナスとモッツァレラのカプレーゼ">
+      <div class="dish-image-container">
+        <img src="./004-Generated Image November 14, 2025 - 9_45PM.png" alt="ナスカプレーゼ">
+        <div class="dish-overlay">
+          <button class="view-recipe-btn">レシピを見る</button>
+        </div>
+      </div>
+      <div class="dish-content">
+        <h3>ナスとモッツァレラのカプレーゼ</h3>
+        <p>色鮮やかでヘルシー、見た目も味も楽しめる前菜。おもてなし料理にもぴったりです。</p>
+        <div class="dish-tags">
+          <span class="tag">揚げ物</span>
+          <span class="tag">イタリアン</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dish 5 -->
+    <div class="dish-card" id="dish5" data-category="stewed"
+         data-recipe="角切りナスを油で炒め、ひき肉、玉ねぎと一緒にトマトベースのマイルドカレーソースで煮込む。生姜とニンニクで風味づけ。"
+         data-name="ナスのマイルドキーマカレー">
+      <div class="dish-image-container">
+        <img src="./005-Generated Image November 14, 2025 - 9_46PM.png" alt="ナスキーマカレー">
+        <div class="dish-overlay">
+          <button class="view-recipe-btn">レシピを見る</button>
+        </div>
+      </div>
+      <div class="dish-content">
+        <h3>ナスのマイルドキーマカレー</h3>
+        <p>ナスがカレーソースを吸い込んでジューシー。辛さ控えめで誰でも楽しめる一品です。</p>
+        <div class="dish-tags">
+          <span class="tag">煮込み</span>
+          <span class="tag">カレー</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dish 6 -->
+    <div class="dish-card" id="dish6" data-category="stewed"
+         data-recipe="ナス、玉ねぎ、セロリ、トマトをオリーブオイルで炒め、ワインビネガーと砂糖で甘酸っぱく煮込む。冷やしても美味しい。"
+         data-name="ナスのカポナータ">
+      <div class="dish-image-container">
+        <img src="./006-Generated Image November 14, 2025 - 9_47PM.png" alt="ナスカポナータ">
+        <div class="dish-overlay">
+          <button class="view-recipe-btn">レシピを見る</button>
+        </div>
+      </div>
+      <div class="dish-content">
+        <h3>ナスのカポナータ</h3>
+        <p>地中海風の甘酸っぱい野菜煮込み。パンやパスタと合わせても、そのままでも絶品です。</p>
+        <div class="dish-tags">
+          <span class="tag">煮込み</span>
+          <span class="tag">地中海</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dish 7 -->
+    <div class="dish-card" id="dish7" data-category="baked"
+         data-recipe="ナスを半分に切って焼き、蜂蜜とクリームチーズを塗る。オーブンで5分焼き、クルミとタイムを散らす。"
+         data-name="ナスのハニーチーズロースト">
+      <div class="dish-image-container">
+        <img src="./007-Generated Image November 14, 2025 - 9_47PM.png" alt="ナスハニーチーズ">
+        <div class="dish-overlay">
+          <button class="view-recipe-btn">レシピを見る</button>
+        </div>
+      </div>
+      <div class="dish-content">
+        <h3>ナスのハニーチーズロースト</h3>
+        <p>甘じょっぱい組み合わせがクセになる。見た目も華やかで特別な日にもおすすめです。</p>
+        <div class="dish-tags">
+          <span class="tag">オーブン焼き</span>
+          <span class="tag">創作</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dish 8 -->
+    <div class="dish-card" id="dish8" data-category="stewed"
+         data-recipe="ナスを一口大に切り炒め、ひき肉、味噌、甜麺醤、豆板醤少々でとろみをつけて煮込む。ネギとゴマを散らす。"
+         data-name="ナスのマイルド麻婆">
+      <div class="dish-image-container">
+        <img src="./008-Generated Image November 14, 2025 - 9_48PM.png" alt="ナス麻婆">
+        <div class="dish-overlay">
+          <button class="view-recipe-btn">レシピを見る</button>
+        </div>
+      </div>
+      <div class="dish-content">
+        <h3>ナスのマイルド麻婆</h3>
+        <p>辛さ控えめで、子どもや辛いものが苦手な方にも食べやすい中華料理です。</p>
+        <div class="dish-tags">
+          <span class="tag">煮込み</span>
+          <span class="tag">中華</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dish 9 -->
+    <div class="dish-card" id="dish9" data-category="baked"
+         data-recipe="細かく刻んだナスとひき肉でミートボールを作り、トマトソースで煮る。バゲットに挟み、チーズをのせてオーブンで焼く。"
+         data-name="ナス入りミートボールサブ">
+      <div class="dish-image-container">
+        <img src="./009-Generated Image November 14, 2025 - 9_49PM.png" alt="ナスミートボールサブ">
+        <div class="dish-overlay">
+          <button class="view-recipe-btn">レシピを見る</button>
+        </div>
+      </div>
+      <div class="dish-content">
+        <h3>ナス入りミートボールサブ</h3>
+        <p>ジューシーでヘルシーなミートボールをバゲットにサンド。ボリューム満点のランチに。</p>
+        <div class="dish-tags">
+          <span class="tag">オーブン焼き</span>
+          <span class="tag">サンド</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dish 10 -->
+    <div class="dish-card" id="dish10" data-category="fried"
+         data-recipe="ナスを薄くスライスし、片栗粉をまぶしてカリッと揚げる。塩、ガーリックパウダー、パプリカパウダーで味付け。"
+         data-name="ナスのクリスピーフライ">
+      <div class="dish-image-container">
+        <img src="./10-Generated Image November 14, 2025 - 9_50PM.png" alt="ナスクリスピーフライ">
+        <div class="dish-overlay">
+          <button class="view-recipe-btn">レシピを見る</button>
+        </div>
+      </div>
+      <div class="dish-content">
+        <h3>ナスのクリスピーフライ</h3>
+        <p>カリカリ食感のナスチップ。ディップソースと合わせて楽しめるヘルシースナックです。</p>
+        <div class="dish-tags">
+          <span class="tag">揚げ物</span>
+          <span class="tag">スナック</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>🍆 ナス料理の可能性は無限大 🍆</p>
+  <p>© 2025 Eggplant Delights. All rights reserved.</p>
+  <div class="social-icons">
+    <div class="social-icon">📷</div>
+    <div class="social-icon">🐦</div>
+    <div class="social-icon">📘</div>
+  </div>
+</footer>
+
+<!-- Modal -->
+<div class="modal" id="recipeModal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img id="modalImage" class="modal-image" src="" alt="">
+    <h2 id="modalTitle"></h2>
+    <h4>📖 作り方</h4>
+    <p id="modalRecipe"></p>
+  </div>
+</div>
+
+<script>
+  // Loading Screen
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      document.getElementById('loading').classList.add('hidden');
+    }, 800);
+  });
+
+  // Theme Toggle
+  const themeToggle = document.getElementById('themeToggle');
+  const body = document.body;
+  
+  themeToggle.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    themeToggle.textContent = body.classList.contains('dark-mode') 
+      ? '☀️ ライトモード' 
+      : '🌙 ダークモード';
+  });
+
+  // Scroll Animation for Dish Cards
+  const dishCards = document.querySelectorAll('.dish-card');
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -100px 0px'
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add('show');
+        }, index * 100);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  dishCards.forEach(card => observer.observe(card));
+
+  // Animated Counters
+  const counters = document.querySelectorAll('.stat-number');
+  let animated = false;
+
+  const animateCounters = () => {
+    counters.forEach(counter => {
+      const target = parseInt(counter.getAttribute('data-target'));
+      const duration = 2000;
+      const increment = target / (duration / 16);
+      let current = 0;
+
+      const updateCounter = () => {
+        current += increment;
+        if (current < target) {
+          counter.textContent = Math.ceil(current);
+          requestAnimationFrame(updateCounter);
+        } else {
+          counter.textContent = target;
+        }
+      };
+      updateCounter();
+    });
+  };
+
+  window.addEventListener('scroll', () => {
+    const statsSection = document.querySelector('.stats');
+    const statsPosition = statsSection.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.3;
+
+    if (statsPosition < screenPosition && !animated) {
+      animateCounters();
+      animated = true;
+    }
+  });
+
+  // Filter Functionality
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Update active button
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      const filterValue = button.getAttribute('data-filter');
+
+      dishCards.forEach(card => {
+        const category = card.getAttribute('data-category');
+        
+        if (filterValue === 'all' || category === filterValue) {
+          card.style.display = 'block';
+          setTimeout(() => {
+            card.classList.add('show');
+          }, 100);
+        } else {
+          card.classList.remove('show');
+          setTimeout(() => {
+            card.style.display = 'none';
+          }, 400);
+        }
+      });
+    });
+  });
+
+  // Modal Logic
+  const modal = document.getElementById('recipeModal');
+  const modalTitle = document.getElementById('modalTitle');
+  const modalRecipe = document.getElementById('modalRecipe');
+  const modalImage = document.getElementById('modalImage');
+  const closeBtn = document.querySelector('.close');
+
+  dishCards.forEach(card => {
+    card.addEventListener('click', () => {
+      modal.style.display = 'flex';
+      const img = card.querySelector('img');
+      modalImage.src = img.src;
+      modalTitle.innerText = card.getAttribute('data-name');
+      modalRecipe.innerText = card.getAttribute('data-recipe');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  const closeModal = () => {
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  };
+
+  closeBtn.addEventListener('click', closeModal);
+  window.addEventListener('click', e => { 
+    if (e.target === modal) closeModal(); 
+  });
+
+  // Keyboard accessibility for modal
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.style.display === 'flex') {
+      closeModal();
+    }
+  });
+
+  // Navigation Active State
+  const navLinks = document.querySelectorAll('nav a');
+  
+  window.addEventListener('scroll', () => {
+    let current = '';
+    const sections = document.querySelectorAll('.dish-card[id]');
+    
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 200;
+      if (scrollY >= sectionTop) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === `#${current}`) {
+        link.classList.add('active');
+      }
+    });
+  });
+
+  // Smooth Scroll
+  navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetId = link.getAttribute('href').substring(1);
+      const targetSection = document.getElementById(targetId);
+      
+      if (targetSection) {
+        targetSection.scrollIntoView({
+          behavior: 'smooth',
+          block: 'center'
+        });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
